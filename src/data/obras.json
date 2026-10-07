@@ -29,8 +29,32 @@
           "estado": "confirmado"
         },
         {
-          "id": "sev-32",
+          "id": "sev-43",
           "orden": 3,
+          "titulo": "Busto de león",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-43.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-43.jpg",
+          "estado": "pendiente",
+          "nota": "Faltan medidas y serie"
+        },
+        {
+          "id": "sev-42",
+          "orden": 4,
+          "titulo": "Busto de rinoceronte",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-42.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-42.jpg",
+          "estado": "pendiente",
+          "nota": "Faltan medidas y serie"
+        },
+        {
+          "id": "sev-32",
+          "orden": 5,
           "titulo": "Búfalos",
           "medidas_cm": "24 × 48 × 30",
           "serie": 50,
@@ -41,7 +65,7 @@
         },
         {
           "id": "sev-27",
-          "orden": 4,
+          "orden": 6,
           "titulo": "Facóqueros",
           "medidas_cm": "16 × 20 × 28",
           "serie": 50,
@@ -52,7 +76,7 @@
         },
         {
           "id": "sev-8",
-          "orden": 5,
+          "orden": 7,
           "titulo": "Busto de búfalo",
           "medidas_cm": "20 × 12 × 14",
           "serie": 50,
@@ -63,7 +87,7 @@
         },
         {
           "id": "sev-10",
-          "orden": 6,
+          "orden": 8,
           "titulo": "Busto de leopardo",
           "medidas_cm": "22 × 10 × 10",
           "serie": 50,
@@ -74,7 +98,7 @@
         },
         {
           "id": "sev-18",
-          "orden": 7,
+          "orden": 9,
           "titulo": "Busto de sable",
           "medidas_cm": "25 × 7 × 9",
           "serie": 100,
@@ -85,7 +109,7 @@
         },
         {
           "id": "sev-17",
-          "orden": 8,
+          "orden": 10,
           "titulo": "Busto de órix",
           "medidas_cm": "24 × 7 × 10",
           "serie": 100,
@@ -96,7 +120,7 @@
         },
         {
           "id": "sev-20",
-          "orden": 9,
+          "orden": 11,
           "titulo": "Busto de ñu azul",
           "medidas_cm": "16 × 8 × 13",
           "serie": 100,
@@ -107,7 +131,7 @@
         },
         {
           "id": "sev-11",
-          "orden": 10,
+          "orden": 12,
           "titulo": "Busto de eland",
           "medidas_cm": "25 × 10 × 10",
           "serie": 100,
