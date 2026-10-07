@@ -1,0 +1,132 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/img/general/logo-firma.jpg';
+import { waGeneral } from '../lib/obras';
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <Image src={logo} alt="S. Venegas, escultor" widths={[144, 220]} sizes="110px" />
+      </div>
+      <div class="site-footer__col">
+        <span class="site-footer__label">Taller</span>
+        <span class="pendiente">[Dirección]</span>
+        <span class="pendiente">[Ciudad, País]</span>
+      </div>
+      <div class="site-footer__col">
+        <span class="site-footer__label">Contacto</span>
+        <a href={waGeneral}>WhatsApp</a>
+        <span>Visitas con cita previa</span>
+      </div>
+      <div class="site-footer__col">
+        <span class="site-footer__label">Redes</span>
+        <a href="#" class="pendiente">Instagram</a>
+        <a href="#" class="pendiente">[Otra red]</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Serafín Venegas. Todas las obras son originales.</span>
+      <nav aria-label="Información legal" class="site-footer__legal">
+        <a href="/legal#aviso-legal">Aviso legal</a>
+        <a href="/legal#política-de-privacidad">Privacidad</a>
+        <a href="/legal#política-de-cookies">Cookies</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    padding-block: clamp(48px, 7vw, 88px) 48px;
+    background: var(--ivory);
+  }
+  .site-footer__top {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+    row-gap: 24px;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+  .site-footer__brand {
+    grid-column: span 5;
+  }
+  .site-footer__brand :global(img) {
+    height: 72px;
+    width: auto;
+    mix-blend-mode: multiply;
+  }
+  .site-footer__col {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .site-footer__col:nth-of-type(2) {
+    grid-column: 7 / span 2;
+  }
+  .site-footer__label {
+    color: var(--muted);
+  }
+  .site-footer__col a {
+    color: var(--earth);
+    text-decoration: none;
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .site-footer__col a:hover {
+    color: var(--sage);
+  }
+  .site-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 0.8125rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    margin-top: 40px;
+  }
+  .site-footer__legal {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .site-footer__legal a {
+    color: var(--muted);
+    text-decoration: none;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .site-footer__legal a:hover {
+    color: var(--sage);
+  }
+  .pendiente {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  @media (max-width: 1023px) {
+    .site-footer__top {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .site-footer__brand {
+      grid-column: 1 / -1;
+    }
+    .site-footer__col,
+    .site-footer__col:nth-of-type(2) {
+      grid-column: auto;
+    }
+  }
+  @media (max-width: 480px) {
+    .site-footer__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

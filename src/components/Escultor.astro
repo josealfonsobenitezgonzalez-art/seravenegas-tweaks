@@ -1,0 +1,119 @@
+---
+import { Image } from 'astro:assets';
+import retrato from '../assets/img/general/retrato-serafin.jpg';
+---
+<section id="sobre" class="escultor">
+  <div class="container escultor__grid">
+    <div class="escultor__media-col">
+      <p class="eyebrow" style="color: var(--sand)">El escultor</p>
+      <div class="escultor__portrait">
+        <Image
+          src={retrato}
+          alt="Serafín Venegas con su cámara junto a un río en la sabana africana"
+          widths={[480, 720, 960]}
+          sizes="(max-width: 1023px) 100vw, 40vw"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <div class="escultor__text">
+      <p class="escultor__quote">
+        “El monte regala instantes.<em>Yo los fundo en bronce.</em>”
+      </p>
+      <div class="escultor__bio">
+        <p>
+          Serafín Venegas se licenció en Bellas Artes y es taxidermista de oficio. Desde el
+          taller donde modela, funde y patina cada pieza, une su pasión por la naturaleza y
+          la montería con la escultura en bronce. <span class="pendiente">[Biografía pendiente de ampliar: ciudad y año de nacimiento, formación y trayectoria.]</span>
+        </p>
+        <p>
+          Su obra explora la fauna africana e ibérica <span class="pendiente">[y otros temas]</span>, y recrea escenas e
+          instantes de los animales en su hábitat.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .escultor {
+    background: var(--olive);
+    color: var(--ivory);
+    padding-block: clamp(56px, 8vw, 104px);
+  }
+  .escultor__grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+    align-items: center;
+  }
+  .escultor__media-col {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .escultor__portrait {
+    border-radius: var(--r-img);
+    overflow: hidden;
+    background: #647250;
+    aspect-ratio: 4 / 5;
+    max-height: 420px;
+  }
+  .escultor__portrait :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 40%;
+  }
+  .escultor__text {
+    grid-column: 7 / span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+  }
+  .escultor__quote {
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: clamp(2.125rem, 1.4rem + 3vw, 2.9375rem);
+    line-height: 1.1;
+    color: var(--ivory);
+  }
+  .escultor__quote em {
+    font-style: normal;
+    color: var(--sand);
+    display: block;
+  }
+  .escultor__bio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: #e8e2d2;
+  }
+  .escultor__bio p {
+    margin: 0;
+  }
+  .pendiente {
+    color: #cdd1bd;
+    font-style: italic;
+  }
+
+  @media (max-width: 1023px) {
+    .escultor__grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .escultor__portrait {
+      aspect-ratio: auto;
+      height: 260px;
+      max-height: none;
+    }
+    .escultor__portrait :global(img) {
+      object-position: 78% 40%;
+    }
+  }
+</style>

@@ -1,0 +1,242 @@
+---
+import { Image, getImage } from 'astro:assets';
+import IconWa from './IconWa.astro';
+import { colecciones, waDisponibilidad } from '../lib/obras';
+
+// Catálogo para la vista ampliada: imagen grande (recorte) por obra.
+const catalogo = await Promise.all(
+  colecciones.map(async (c) => ({
+    id: c.id,
+    label: c.nombre,
+    works: await Promise.all(
+      c.obras.map(async (o) => {
+        const full = await getImage({ src: o.recorte, width: 1400, format: 'webp' });
+        return {
+          id: o.id,
+          title: o.titulo,
+          col: o.coleccionNombre,
+          meta: o.meta,
+          cta: o.cta,
+          wa: o.wa,
+          alt: o.alt,
+          full: full.src,
+        };
+      }),
+    ),
+  })),
+);
+const catalogoJson = JSON.stringify(catalogo);
+---
+<section id="obra" class="obra section">
+  <div class="container">
+    <div class="obra__head">
+      <div class="obra__head-left">
+        <p class="eyebrow" style="color: var(--earth)">Escultura en bronce</p>
+        <h2 class="h2" style="color: var(--sage)">La obra</h2>
+      </div>
+      <p class="obra__intro">
+        Cada pieza tiene su propio botón: te llegará un WhatsApp con el nombre de la obra ya
+        escrito.
+      </p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Colecciones">
+      {
+        colecciones.map((c, i) => (
+          <button
+            type="button"
+            class="tab"
+            role="tab"
+            id={`tab-${c.id}`}
+            aria-controls={`panel-${c.id}`}
+            aria-selected={i === 0 ? 'true' : 'false'}
+            tabindex={i === 0 ? '0' : '-1'}
+            data-tab-btn={c.id}
+          >
+            {c.nombre}
+            <span class="tab__count">{c.obras.length}</span>
+          </button>
+        ))
+      }
+    </div>
+
+    {
+      colecciones.map((c, i) => (
+        <div
+          id={`panel-${c.id}`}
+          class="grid-obras"
+          role="tabpanel"
+          aria-labelledby={`tab-${c.id}`}
+          data-panel={c.id}
+          hidden={i !== 0}
+        >
+          {c.obras.map((o, idx) => (
+            <article class="obra-card">
+              <button
+                type="button"
+                class="obra-card__media"
+                data-open-lightbox
+                data-collection={c.id}
+                data-index={idx}
+                aria-label={`Ampliar ${o.titulo}`}
+              >
+                <Image
+                  src={o.recorte}
+                  alt={o.alt}
+                  widths={[300, 450, 600]}
+                  sizes="(max-width: 639px) 100vw, (max-width: 1023px) 48vw, 30vw"
+                  loading="lazy"
+                />
+              </button>
+              <div class="obra-card__col">{o.coleccionNombre}</div>
+              <h3 class="obra-card__title">{o.titulo}</h3>
+              <div class="obra-card__meta">{o.meta}</div>
+              <a class="btn btn--outline btn--sm obra-card__cta" href={o.wa}>
+                <IconWa size={26} variant="phone" />
+                {o.cta}
+              </a>
+            </article>
+          ))}
+        </div>
+      ))
+    }
+
+    <div class="obra__foot">
+      <a class="btn btn--primary" href={waDisponibilidad}>
+        <IconWa size={20} />
+        Consultar disponibilidad
+      </a>
+    </div>
+  </div>
+
+  <script type="application/json" id="obras-catalogo" set:html={catalogoJson} />
+</section>
+
+<style>
+  .obra__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: clamp(28px, 3.5vw, 40px);
+  }
+  .obra__head-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .obra__intro {
+    margin: 0;
+    max-width: 420px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: clamp(28px, 3.5vw, 40px);
+  }
+  .tab {
+    height: 48px;
+    padding: 0 22px;
+    border: 1px solid var(--sage);
+    border-radius: var(--r-pill);
+    background: transparent;
+    color: var(--sage);
+    font: inherit;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.18s ease, color 0.18s ease;
+  }
+  .tab[aria-selected='true'] {
+    background: var(--sage);
+    color: var(--on-sage);
+  }
+  .tab__count {
+    font-size: 0.8125rem;
+    opacity: 0.75;
+  }
+
+  .grid-obras {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 48px var(--gutter);
+  }
+  .grid-obras[hidden] {
+    display: none;
+  }
+  .obra-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .obra-card__media {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    border: 0;
+    background: var(--white);
+    border-radius: var(--r-img);
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  .obra-card__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .obra-card__col {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--earth);
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .obra-card__title {
+    margin: 0;
+    font-size: var(--h-obra);
+    color: var(--ink);
+  }
+  .obra-card__meta {
+    font-size: var(--meta);
+    color: #5e554c;
+  }
+  .obra-card__cta {
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .obra__foot {
+    display: flex;
+    justify-content: center;
+    margin-top: clamp(40px, 5vw, 56px);
+  }
+
+  @media (max-width: 1023px) {
+    .grid-obras {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 36px var(--gutter);
+    }
+  }
+  @media (max-width: 639px) {
+    .grid-obras {
+      grid-template-columns: 1fr;
+    }
+    .obra-card__media {
+      height: 280px;
+    }
+    .obra-card__cta {
+      align-self: stretch;
+    }
+  }
+</style>

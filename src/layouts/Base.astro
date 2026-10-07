@@ -1,0 +1,91 @@
+---
+import '@fontsource/marcellus/400.css';
+import '@fontsource/raleway/400.css';
+import '@fontsource/raleway/500.css';
+import '@fontsource/raleway/600.css';
+import '@fontsource/raleway/700.css';
+import '../styles/global.css';
+import { getImage } from 'astro:assets';
+import { SITE } from '../lib/site';
+import { portada } from '../lib/obras';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Ruta canónica, p. ej. "/" o "/legal". */
+  path?: string;
+  /** Datos estructurados JSON-LD adicionales. */
+  structuredData?: Record<string, unknown>[];
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  path = '/',
+  structuredData = [],
+} = Astro.props;
+
+const canonical = new URL(path, SITE.url).href;
+
+// Imagen Open Graph a partir de la foto de portada.
+const og = await getImage({ src: portada.imagen, format: 'jpg', width: 1200, height: 630, fit: 'cover' });
+const ogUrl = new URL(og.src, SITE.url).href;
+
+const personaLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Serafín Venegas',
+  alternateName: 'S. Venegas',
+  jobTitle: 'Escultor',
+  description:
+    'Escultor especializado en escultura cinegética en bronce de fauna africana e ibérica y trofeos por encargo.',
+  url: SITE.url,
+  image: ogUrl,
+  knowsAbout: ['Escultura en bronce', 'Fauna cinegética', 'Fundición a la cera perdida'],
+};
+---
+<!doctype html>
+<html lang={SITE.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#FFF4E9" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content={ogUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogUrl} />
+
+    <!-- Favicon desde la firma -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="generator" content={Astro.generator} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(personaLd)} />
+    {
+      structuredData.map((data) => (
+        <script type="application/ld+json" set:html={JSON.stringify(data)} />
+      ))
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Saltar al contenido</a>
+    <slot />
+  </body>
+</html>

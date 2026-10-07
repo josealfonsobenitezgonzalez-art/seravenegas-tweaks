@@ -1,0 +1,418 @@
+{
+  "colecciones": [
+    {
+      "id": "africa",
+      "nombre": "África",
+      "descripcion": "Elefante, búfalo, kudú, leopardo… las grandes especies de la sabana, en bronce.",
+      "obra_tarjeta": "sev-14",
+      "obras": [
+        {
+          "id": "sev-19",
+          "orden": 1,
+          "titulo": "Busto de kudú",
+          "medidas_cm": "26 × 12 × 10",
+          "serie": 100,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-19.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-19.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-14",
+          "orden": 2,
+          "titulo": "Busto de elefante",
+          "medidas_cm": "20 × 12 × 10",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-14.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-14.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-32",
+          "orden": 3,
+          "titulo": "Búfalos",
+          "medidas_cm": "24 × 48 × 30",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-32.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-32.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-27",
+          "orden": 4,
+          "titulo": "Facóqueros",
+          "medidas_cm": "16 × 20 × 28",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-27.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-27.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-8",
+          "orden": 5,
+          "titulo": "Busto de búfalo",
+          "medidas_cm": "20 × 12 × 14",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-8.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-8.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-10",
+          "orden": 6,
+          "titulo": "Busto de leopardo",
+          "medidas_cm": "22 × 10 × 10",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-10.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-10.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-18",
+          "orden": 7,
+          "titulo": "Busto de sable",
+          "medidas_cm": "25 × 7 × 9",
+          "serie": 100,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-18.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-18.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-17",
+          "orden": 8,
+          "titulo": "Busto de órix",
+          "medidas_cm": "24 × 7 × 10",
+          "serie": 100,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-17.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-17.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-20",
+          "orden": 9,
+          "titulo": "Busto de ñu azul",
+          "medidas_cm": "16 × 8 × 13",
+          "serie": 100,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-20.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-20.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-11",
+          "orden": 10,
+          "titulo": "Busto de eland",
+          "medidas_cm": "25 × 10 × 10",
+          "serie": 100,
+          "material": "Bronce",
+          "imagen": "img/africa/escultura_bronce_Sevilla-11.jpg",
+          "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-11.jpg",
+          "estado": "confirmado"
+        }
+      ]
+    },
+    {
+      "id": "fauna-iberica",
+      "nombre": "Fauna Ibérica",
+      "descripcion": "Toros, ciervos, jabalíes, monteses, lobos y perros de rehala: la fauna y la montería de nuestros montes, en bronce.",
+      "obra_tarjeta": "sev-33",
+      "obras": [
+        {
+          "id": "sev-26",
+          "orden": 1,
+          "titulo": "Pelea en berrea «Septiembre»",
+          "medidas_cm": "56 × 18 × 18",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-26.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-26.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-25",
+          "orden": 2,
+          "titulo": "Jabalí con perro «Cara a cara»",
+          "medidas_cm": "18 × 33 × 22",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-25.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-25.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-36",
+          "orden": 3,
+          "titulo": "Macho montés sobre roca",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-36.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-36.jpg",
+          "estado": "pendiente",
+          "nota": "Faltan medidas y serie. Confirmar que va en catálogo"
+        },
+        {
+          "id": "sev-33",
+          "orden": 4,
+          "titulo": "Busto de corzo",
+          "medidas_cm": "22 × 7 × 9",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-33.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-33.jpg",
+          "estado": "confirmado",
+          "nota": "Identificación hecha por la foto; confirmar"
+        },
+        {
+          "id": "sev-21",
+          "orden": 5,
+          "titulo": "Busto de corzo",
+          "medidas_cm": "40 × 17 × 20",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-21.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-21.jpg",
+          "estado": "confirmado",
+          "nota": "Identificación hecha por la foto; confirmar"
+        },
+        {
+          "id": "sev-34",
+          "orden": 6,
+          "titulo": "Busto de rebeco",
+          "medidas_cm": "21 × 7 × 9",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-34.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-34.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-37",
+          "orden": 7,
+          "titulo": "Busto de toro",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
+          "estado": "pendiente",
+          "nota": "Faltan medidas y serie"
+        },
+        {
+          "id": "sev-1-2",
+          "orden": 8,
+          "titulo": "Lobo «Al acecho»",
+          "medidas_cm": "12 × 22 × 14",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-1-2.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-1-2.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-5",
+          "orden": 9,
+          "titulo": "Busto de muflón",
+          "medidas_cm": "20 × 10 × 9",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-5.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-5.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-3",
+          "orden": 10,
+          "titulo": "Busto de ciervo",
+          "medidas_cm": "28 × 12 × 14",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-3.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-3.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-2",
+          "orden": 11,
+          "titulo": "Busto de macho montés de Gredos",
+          "medidas_cm": "27 × 14 × 12",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-2.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-2.jpg",
+          "estado": "confirmado",
+          "nota": "Identificación hecha por la foto; confirmar"
+        },
+        {
+          "id": "sev-4",
+          "orden": 12,
+          "titulo": "Busto de jabalí",
+          "medidas_cm": "18 × 10 × 14",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-4.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-4.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-22",
+          "orden": 13,
+          "titulo": "Podenco de rehala «Camborio»",
+          "medidas_cm": "28 × 12 × 18",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-22.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-22.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-13",
+          "orden": 14,
+          "titulo": "Mastín español",
+          "medidas_cm": "12 × 18 × 10",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-13.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-13.jpg",
+          "estado": "confirmado"
+        },
+        {
+          "id": "sev-35",
+          "orden": 15,
+          "titulo": "Galgo",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-35.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-35.jpg",
+          "estado": "pendiente",
+          "nota": "Faltan medidas y serie"
+        },
+        {
+          "id": "sev-6",
+          "orden": 16,
+          "titulo": "Ibex bezoar",
+          "medidas_cm": "27 × 13 × 13",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-6.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-6.jpg",
+          "estado": "confirmado",
+          "nota": "Identificación hecha por la foto; confirmar"
+        }
+      ]
+    },
+    {
+      "id": "trofeos",
+      "nombre": "Trofeos",
+      "descripcion": "Piezas por encargo para premios y homenajes, como el premio «Flamenco Hoy» o el busto de Paco de Lucía.",
+      "obra_tarjeta": "sev-40",
+      "encargo": true,
+      "obras": [
+        {
+          "id": "sev-31",
+          "orden": 1,
+          "titulo": "Placa homenaje «Jóvenes Monteros»",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/trofeos/escultura_bronce_Sevilla-31.jpg",
+          "imagen_recorte": "img/recortes/trofeos/escultura_bronce_Sevilla-31.jpg",
+          "estado": "confirmado",
+          "encargo": true
+        },
+        {
+          "id": "sev-30",
+          "orden": 2,
+          "titulo": "Premio «Flamenco Hoy»",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/trofeos/escultura_bronce_Sevilla-30.jpg",
+          "imagen_recorte": "img/recortes/trofeos/escultura_bronce_Sevilla-30.jpg",
+          "estado": "confirmado",
+          "encargo": true
+        },
+        {
+          "id": "sev-29",
+          "orden": 3,
+          "titulo": "Busto de Paco de Lucía",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/trofeos/escultura_bronce_Sevilla-29.jpg",
+          "imagen_recorte": "img/recortes/trofeos/escultura_bronce_Sevilla-29.jpg",
+          "estado": "confirmado",
+          "encargo": true
+        },
+        {
+          "id": "sev-38",
+          "orden": 4,
+          "titulo": "Toro estilizado",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/trofeos/escultura_bronce_Sevilla-38.jpg",
+          "imagen_recorte": "img/recortes/trofeos/escultura_bronce_Sevilla-38.jpg",
+          "estado": "confirmado",
+          "encargo": true
+        },
+        {
+          "id": "sev-39",
+          "orden": 5,
+          "titulo": "Caballo estilizado",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Bronce",
+          "imagen": "img/trofeos/escultura_bronce_Sevilla-39.jpg",
+          "imagen_recorte": "img/recortes/trofeos/escultura_bronce_Sevilla-39.jpg",
+          "estado": "confirmado",
+          "encargo": true
+        },
+        {
+          "id": "sev-40",
+          "orden": 6,
+          "titulo": "Premio de la Federación Provincial de Sevilla de Entidades Flamencas",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Resina e hidroimpresión",
+          "imagen": "img/trofeos/escultura_bronce_Sevilla-40.jpg",
+          "imagen_recorte": "img/recortes/trofeos/escultura_bronce_Sevilla-40.jpg",
+          "estado": "confirmado",
+          "encargo": true
+        },
+        {
+          "id": "sev-41",
+          "orden": 7,
+          "titulo": "Premio Peña Flamenca La Solera",
+          "medidas_cm": null,
+          "serie": null,
+          "material": "Resina",
+          "imagen": "img/trofeos/escultura_bronce_Sevilla-41.jpg",
+          "imagen_recorte": "img/recortes/trofeos/escultura_bronce_Sevilla-41.jpg",
+          "estado": "confirmado",
+          "encargo": true
+        }
+      ]
+    }
+  ],
+  "portada": {
+    "obra": "sev-36",
+    "escritorio": "imagen (original, object-fit: cover, object-position 50% 45%)",
+    "movil": "imagen_recorte (object-fit: contain)"
+  },
+  "whatsapp": {
+    "numero": "34666492454",
+    "mensaje_obra": "Hola Serafín, me interesa la obra «{titulo}» ({coleccion}). ¿Está disponible?",
+    "mensaje_trofeo": "Hola Serafín, he visto «{titulo}» y me gustaría encargar una pieza similar.",
+    "mensaje_portada": "Hola Serafín, me gustaría saber qué obras tienes disponibles.",
+    "mensaje_general": "Hola Serafín, vengo de tu web."
+  }
+}

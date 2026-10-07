@@ -1,0 +1,165 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/img/general/logo-firma.jpg';
+import IconWa from './IconWa.astro';
+import { waNav } from '../lib/obras';
+
+const enlaces = [
+  { href: '#coleccion-africa', texto: 'África' },
+  { href: '#coleccion-fauna-iberica', texto: 'Fauna Ibérica' },
+  { href: '#coleccion-trofeos', texto: 'Trofeos' },
+  { href: '#sobre', texto: 'El escultor' },
+  { href: '#contacto', texto: 'Contacto' },
+];
+---
+<header class="site-header">
+  <div class="site-header__bar container">
+    <a href="#inicio" class="site-header__logo" aria-label="S. Venegas, escultor — inicio">
+      <Image src={logo} alt="S. Venegas, escultor" widths={[160, 240]} sizes="120px" />
+    </a>
+
+    <nav class="nav-desktop" aria-label="Principal">
+      {enlaces.map((e) => <a href={e.href}>{e.texto}</a>)}
+      <a class="btn btn--primary btn--sm" href={waNav}>
+        <IconWa size={18} />
+        Escríbeme por WhatsApp
+      </a>
+    </nav>
+
+    <button
+      type="button"
+      class="nav-toggle"
+      id="nav-toggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="nav-mobile"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Principal (móvil)" hidden>
+    {enlaces.map((e) => <a href={e.href} data-nav-close>{e.texto}</a>)}
+    <a class="btn btn--primary" href={waNav} data-nav-close>
+      <IconWa size={18} />
+      Escríbeme por WhatsApp
+    </a>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--ivory);
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header__bar {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .site-header__logo {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .site-header__logo :global(img) {
+    height: 80px;
+    width: auto;
+    mix-blend-mode: multiply;
+  }
+  .nav-desktop {
+    display: flex;
+    gap: clamp(18px, 2.4vw, 40px);
+    align-items: center;
+    font-size: 0.9375rem;
+  }
+  .nav-desktop > a:not(.btn) {
+    color: var(--ink);
+    text-decoration: none;
+    padding-block: 10px;
+  }
+  .nav-desktop > a:not(.btn):hover {
+    color: var(--sage);
+  }
+  .nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--sage);
+    border-radius: var(--r-pill);
+    background: transparent;
+    color: var(--sage);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px var(--margin) 24px;
+    border-top: 1px solid var(--line);
+  }
+  .nav-mobile[data-open='true'] {
+    display: flex;
+  }
+  .nav-mobile a:not(.btn) {
+    color: var(--ink);
+    text-decoration: none;
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--line);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-mobile .btn {
+    margin-top: 12px;
+  }
+
+  @media (max-width: 900px) {
+    .site-header__bar {
+      height: 72px;
+    }
+    .site-header__logo :global(img) {
+      height: 56px;
+    }
+    .nav-desktop {
+      display: none;
+    }
+    .nav-toggle {
+      display: inline-flex;
+    }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('nav-mobile');
+  if (toggle && menu) {
+    const setOpen = (open: boolean) => {
+      menu.dataset.open = String(open);
+      menu.hidden = !open;
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    };
+    toggle.addEventListener('click', () => {
+      setOpen(menu.dataset.open !== 'true');
+    });
+    menu.querySelectorAll('[data-nav-close]').forEach((a) =>
+      a.addEventListener('click', () => setOpen(false)),
+    );
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.dataset.open === 'true') {
+        setOpen(false);
+        (toggle as HTMLButtonElement).focus();
+      }
+    });
+  }
+</script>

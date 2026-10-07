@@ -1,0 +1,150 @@
+---
+import { Image } from 'astro:assets';
+import IconWa from './IconWa.astro';
+import { colecciones } from '../lib/obras';
+import { waLink } from '../lib/site';
+
+// Mensajes de "Consultar" por colección (según el diseño de referencia).
+const consultas: Record<string, string> = {
+  africa: 'Hola Serafín, me interesa la colección Fauna Africana.',
+  'fauna-iberica': 'Hola Serafín, me interesa la colección Fauna Ibérica.',
+  trofeos: 'Hola Serafín, me gustaría encargar un trofeo.',
+};
+---
+<section id="colecciones" class="colecciones section">
+  <div class="container">
+    <div class="colecciones__head">
+      <div class="colecciones__head-left">
+        <p class="eyebrow" style="color: var(--earth)">Colecciones</p>
+        <h2 class="h2" style="color: var(--sage)">Escultura cinegética y trofeos</h2>
+      </div>
+      <p class="colecciones__intro">
+        Escenas e instantes de animales en su hábitat, y piezas por encargo para premios y
+        homenajes.
+      </p>
+    </div>
+
+    <div class="colecciones__grid">
+      {
+        colecciones.map((c) => (
+          <article id={`coleccion-${c.id}`} class="card">
+            <button
+              type="button"
+              class="card__media"
+              data-open-lightbox
+              data-collection={c.id}
+              data-index={c.indiceTarjeta}
+              aria-label={`Ver las obras de la colección ${c.nombre}`}
+            >
+              <Image
+                src={c.tarjeta.recorte}
+                alt={c.tarjeta.alt}
+                widths={[320, 480, 640]}
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 48vw, 30vw"
+                loading="lazy"
+              />
+            </button>
+            <h3 class="card__title">{c.nombre}</h3>
+            <p class="card__desc">{c.descripcion}</p>
+            <div class="card__actions">
+              <a class="link-strong" href="#obra" data-tab={c.id} style="color: var(--sage)">
+                Ver colección →
+              </a>
+              <a class="link-strong" href={waLink(consultas[c.id])} style="color: var(--earth)">
+                <IconWa size={16} />
+                Consultar
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .colecciones {
+    background: var(--sand);
+  }
+  .colecciones__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: clamp(32px, 4vw, 44px);
+  }
+  .colecciones__head-left {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .colecciones__intro {
+    margin: 0;
+    max-width: 400px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4f3a2d;
+  }
+  .colecciones__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gutter);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .card__media {
+    display: block;
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    border: 0;
+    background: var(--white);
+    border-radius: var(--r-img);
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  .card__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .card__title {
+    margin: 6px 0 0;
+    font-size: var(--h-col);
+    line-height: 1.05;
+    color: var(--sage);
+  }
+  .card__desc {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #4f3a2d;
+  }
+  .card__actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1023px) {
+    .colecciones__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .card__media {
+      height: 300px;
+    }
+  }
+  @media (max-width: 639px) {
+    .colecciones__grid {
+      grid-template-columns: 1fr;
+    }
+    .card__media {
+      height: 280px;
+    }
+  }
+</style>

@@ -1,0 +1,52 @@
+---
+import { getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Colecciones from '../components/Colecciones.astro';
+import Galeria from '../components/Galeria.astro';
+import Escultor from '../components/Escultor.astro';
+import Proceso from '../components/Proceso.astro';
+import Contacto from '../components/Contacto.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
+import Lightbox from '../components/Lightbox.astro';
+import { colecciones } from '../lib/obras';
+import { SITE } from '../lib/site';
+
+// JSON-LD VisualArtwork por obra.
+const obrasPlanas = colecciones.flatMap((c) => c.obras);
+const artworks = await Promise.all(
+  obrasPlanas.map(async (o) => {
+    const im = await getImage({ src: o.recorte, width: 1000, format: 'jpg' });
+    const data: Record<string, unknown> = {
+      '@context': 'https://schema.org',
+      '@type': 'VisualArtwork',
+      name: o.titulo,
+      artform: 'Escultura',
+      artMedium: o.material,
+      creator: { '@type': 'Person', name: 'Serafín Venegas' },
+      image: new URL(im.src, SITE.url).href,
+      url: `${SITE.url}/#obra`,
+    };
+    if (o.medidas && !o.esTrofeo) {
+      data.width = o.medidas.split('×')[0]?.trim() + ' cm';
+    }
+    return data;
+  }),
+);
+---
+<Base structuredData={artworks}>
+  <Header />
+  <main>
+    <Hero />
+    <Colecciones />
+    <Galeria />
+    <Escultor />
+    <Proceso />
+    <Contacto />
+  </main>
+  <Footer />
+  <WhatsAppFab />
+  <Lightbox />
+</Base>

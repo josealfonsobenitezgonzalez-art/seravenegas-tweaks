@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
+import { SITE } from '../lib/site';
+---
+<Base title={`Página no encontrada · ${SITE.name}`} description="La página que buscas no existe." path="/404">
+  <Header />
+  <main class="nf">
+    <div class="container nf__inner">
+      <p class="eyebrow" style="color: var(--earth)">Error 404</p>
+      <h1 class="h1" style="color: var(--sage)">Esta página<em>no existe.</em></h1>
+      <p class="lead">
+        Puede que el enlace sea antiguo o esté mal escrito. Vuelve al inicio para ver la obra en
+        bronce de Serafín Venegas.
+      </p>
+      <div class="nf__actions">
+        <a class="btn btn--primary" href="/#inicio">Volver al inicio</a>
+        <a class="btn btn--outline" href="/#obra">Ver la obra</a>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <WhatsAppFab />
+</Base>
+
+<style>
+  .nf {
+    padding-block: clamp(64px, 12vw, 160px);
+  }
+  .nf__inner {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .nf__actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+</style>

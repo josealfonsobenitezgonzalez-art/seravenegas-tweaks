@@ -1,0 +1,127 @@
+---
+const pasos = [
+  {
+    n: '01',
+    t: 'Modelado',
+    d: 'La pieza nace en arcilla o cera, modelada a mano hasta encontrar su forma definitiva.',
+  },
+  {
+    n: '02',
+    t: 'Molde y cera',
+    d: 'Se obtiene un molde y una réplica en cera que se retoca con precisión.',
+  },
+  {
+    n: '03',
+    t: 'Fundición',
+    d: 'La cera se funde y su hueco se llena de bronce líquido a más de 1.100 °C.',
+  },
+  {
+    n: '04',
+    t: 'Cincelado y pátina',
+    d: 'Se cincela, pule y patina con calor y óxidos hasta lograr el color final.',
+  },
+];
+---
+<section id="proceso" class="proceso">
+  <div class="container">
+    <div class="proceso__head">
+      <div class="proceso__head-left">
+        <p class="eyebrow" style="color: var(--sand)">El proceso</p>
+        <h2 class="h2">De la cera al bronce</h2>
+      </div>
+      <p class="proceso__intro">
+        Cada escultura atraviesa semanas de trabajo manual con una técnica milenaria. Ninguna
+        pieza sale igual a otra.
+      </p>
+    </div>
+    <ol class="proceso__list">
+      {
+        pasos.map((s) => (
+          <li class="proceso__step">
+            <span class="proceso__n">{s.n}</span>
+            <h3 class="proceso__t">{s.t}</h3>
+            <p class="proceso__d">{s.d}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .proceso {
+    background: var(--earth-section);
+    color: var(--ivory);
+    padding-block: clamp(56px, 8vw, 104px);
+  }
+  .proceso__head {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+    align-items: end;
+    margin-bottom: clamp(40px, 6vw, 64px);
+  }
+  .proceso__head-left {
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .proceso__intro {
+    grid-column: 8 / span 5;
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: #f1e4d6;
+  }
+  .proceso__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--gutter);
+  }
+  .proceso__step {
+    border-top: 1px solid var(--sand);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .proceso__n {
+    font-family: var(--font-title);
+    font-size: 2.125rem;
+    color: var(--sand);
+    line-height: 1;
+  }
+  .proceso__t {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .proceso__d {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #f1e4d6;
+  }
+
+  @media (max-width: 1023px) {
+    .proceso__head {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .proceso__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 560px) {
+    .proceso__list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

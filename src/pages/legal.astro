@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
+import { Content } from '../content/legal.md';
+import { SITE } from '../lib/site';
+---
+<Base
+  title={`Información legal · ${SITE.name}`}
+  description="Aviso legal, política de privacidad y política de cookies de seravenegas.com."
+  path="/legal"
+>
+  <Header />
+  <main class="legal">
+    <div class="container legal__inner">
+      <a class="legal__back" href="/#inicio">← Volver al inicio</a>
+      <article class="prose">
+        <Content />
+      </article>
+    </div>
+  </main>
+  <Footer />
+  <WhatsAppFab />
+</Base>
+
+<style>
+  .legal {
+    padding-block: clamp(40px, 6vw, 80px);
+  }
+  .legal__inner {
+    max-width: 760px;
+  }
+  .legal__back {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--sage);
+    margin-bottom: 8px;
+  }
+  .prose :global(h1) {
+    font-size: var(--h2);
+    color: var(--sage);
+    line-height: 1.1;
+    margin: 0 0 8px;
+  }
+  .prose :global(h2) {
+    font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2rem);
+    color: var(--sage);
+    margin: 48px 0 12px;
+    scroll-margin-top: 110px;
+  }
+  .prose :global(h3) {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--ink);
+    margin: 28px 0 8px;
+  }
+  .prose :global(p),
+  .prose :global(li) {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+  }
+  .prose :global(ul) {
+    padding-left: 1.2em;
+  }
+  .prose :global(li) {
+    margin-bottom: 6px;
+  }
+  .prose :global(a) {
+    color: var(--earth);
+  }
+  .prose :global(strong) {
+    color: var(--ink);
+  }
+  .prose :global(blockquote) {
+    margin: 20px 0;
+    padding: 14px 18px;
+    border-left: 3px solid var(--sand);
+    background: #fbeede;
+    border-radius: 0 6px 6px 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .prose :global(blockquote p) {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+</style>

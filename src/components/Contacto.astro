@@ -1,0 +1,97 @@
+---
+import IconWa from './IconWa.astro';
+import { waContacto } from '../lib/obras';
+---
+<section id="contacto" class="contacto-wrap container">
+  <div class="contacto">
+    <div class="contacto__text">
+      <p class="eyebrow" style="color: var(--sand)">Existencias y encargos</p>
+      <h2 class="h2">Hablemos.</h2>
+      <p>
+        He estado vinculado con la naturaleza desde que era un niño. Cuando años más tarde me
+        licencié en Bellas Artes, decidí dar un paso más: unir mi gran pasión con mi profesión y
+        especializar mi obra escultórica en el mundo animal, aprovechando la base que me aporta
+        mi oficio de taxidermista.
+      </p>
+      <p>
+        En cada obra trato de recrear escenas o instantes —muchas veces fugaces— de distintos
+        animales en su hábitat. Mi objetivo es que sientas ante ella lo mismo que yo sentí al
+        vivir ese momento.
+      </p>
+      <p class="contacto__cierre">
+        Para cualquier información sobre existencias o encargos, escríbeme. Estaré encantado de
+        ayudarte.
+      </p>
+      <span class="contacto__firma">— Serafín Venegas</span>
+    </div>
+    <div class="contacto__action">
+      <a class="btn btn--sand" href={waContacto}>
+        <IconWa size={20} />
+        Escríbeme por WhatsApp
+      </a>
+      <span class="contacto__nota">Te respondo personalmente</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contacto-wrap {
+    padding-block: clamp(40px, 6vw, 72px);
+  }
+  .contacto {
+    background: var(--olive);
+    color: var(--ivory);
+    border-radius: var(--r-block);
+    padding: clamp(32px, 5vw, 80px);
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+    align-items: center;
+  }
+  .contacto__text {
+    grid-column: span 7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contacto__text p {
+    margin: 0;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: #e8e2d2;
+  }
+  .contacto__cierre {
+    color: var(--ivory) !important;
+  }
+  .contacto__firma {
+    font-family: var(--font-title);
+    font-size: 1.4375rem;
+    color: var(--sand);
+  }
+  .contacto__action {
+    grid-column: 9 / span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .contacto__action .btn {
+    width: 100%;
+  }
+  .contacto__nota {
+    text-align: center;
+    font-size: var(--meta);
+    color: #c9cdb8;
+  }
+
+  @media (max-width: 1023px) {
+    .contacto {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .contacto__action {
+      margin-top: 6px;
+    }
+  }
+</style>
