@@ -86,14 +86,15 @@ export interface Coleccion {
 const d = datos as unknown as DatosRaw;
 
 function metaDe(o: ObraRaw, esTrofeo: boolean): string {
+  // Se muestra cada dato solo si existe (null → se oculta, sin corchetes).
+  const partes: string[] = [o.material];
+  if (o.medidas_cm) partes.push(`${o.medidas_cm} cm`);
   if (esTrofeo) {
-    return `${o.material} · Pieza por encargo`;
+    partes.push('Pieza por encargo');
+  } else if (o.serie) {
+    partes.push(`Serie de ${o.serie}`);
   }
-  // Si falta algún dato (obra pendiente), se oculta medidas/serie.
-  if (o.medidas_cm && o.serie) {
-    return `${o.material} · ${o.medidas_cm} cm · Serie de ${o.serie}`;
-  }
-  return o.material;
+  return partes.join(' · ');
 }
 
 export const colecciones: Coleccion[] = d.colecciones.map((c) => {

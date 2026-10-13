@@ -7,10 +7,10 @@
 
 En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI), se informa de los datos del titular de este sitio web:
 
-- **Titular:** Serafín Venegas [apellidos completos]
-- **NIF:** [NIF]
-- **Domicilio:** [dirección completa]
-- **Correo electrónico:** [correo electrónico]
+- **Titular:** Venegas Taxidermia, S.L. (Serafín Venegas)
+- **NIF:** B-90374729
+- **Domicilio:** C/ Pintores, 2 · 41808 Villanueva del Ariscal (Sevilla)
+- **Correo electrónico:** info@seravenegas.com
 - **Sitio web:** seravenegas.com
 
 ### Objeto
@@ -28,7 +28,7 @@ Este aviso legal se rige por la legislación española.
 ## Política de privacidad
 
 ### Responsable del tratamiento
-Serafín Venegas [apellidos completos], NIF [NIF], con domicilio en [dirección completa] y correo [correo electrónico].
+Venegas Taxidermia, S.L. (Serafín Venegas), NIF B-90374729, con domicilio en C/ Pintores, 2, 41808 Villanueva del Ariscal (Sevilla), y correo info@seravenegas.com.
 
 ### Qué datos se tratan
 - **Datos de navegación:** dirección IP, navegador y fecha de acceso, que el proveedor de alojamiento registra de forma automática por motivos técnicos y de seguridad.
@@ -49,7 +49,7 @@ La web está alojada en Vercel Inc. (Estados Unidos), que actúa como encargado 
 > Si finalmente se despliega en Netlify, cambiar "Vercel Inc." por "Netlify, Inc.".
 
 ### Tus derechos
-Puedes pedir el acceso, la rectificación o la supresión de tus datos, así como la limitación u oposición a su tratamiento y su portabilidad, escribiendo a [correo electrónico]. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).
+Puedes pedir el acceso, la rectificación o la supresión de tus datos, así como la limitación u oposición a su tratamiento y su portabilidad, escribiendo a info@seravenegas.com. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).
 
 ## Política de cookies
 

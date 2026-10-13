@@ -32,25 +32,23 @@
           "id": "sev-43",
           "orden": 3,
           "titulo": "Busto de león",
-          "medidas_cm": null,
-          "serie": null,
+          "medidas_cm": "18 × 8 × 8",
+          "serie": 50,
           "material": "Bronce",
           "imagen": "img/africa/escultura_bronce_Sevilla-43.jpg",
           "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-43.jpg",
-          "estado": "pendiente",
-          "nota": "Faltan medidas y serie"
+          "estado": "confirmado"
         },
         {
           "id": "sev-42",
           "orden": 4,
           "titulo": "Busto de rinoceronte",
-          "medidas_cm": null,
-          "serie": null,
+          "medidas_cm": "18 × 8 × 8",
+          "serie": 50,
           "material": "Bronce",
           "imagen": "img/africa/escultura_bronce_Sevilla-42.jpg",
           "imagen_recorte": "img/recortes/africa/escultura_bronce_Sevilla-42.jpg",
-          "estado": "pendiente",
-          "nota": "Faltan medidas y serie"
+          "estado": "confirmado"
         },
         {
           "id": "sev-32",
@@ -174,13 +172,12 @@
           "id": "sev-36",
           "orden": 3,
           "titulo": "Macho montés sobre roca",
-          "medidas_cm": null,
-          "serie": null,
+          "medidas_cm": "30 × 14 × 12",
+          "serie": 50,
           "material": "Bronce",
           "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-36.jpg",
           "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-36.jpg",
-          "estado": "pendiente",
-          "nota": "Faltan medidas y serie. Confirmar que va en catálogo"
+          "estado": "confirmado"
         },
         {
           "id": "sev-33",
@@ -221,13 +218,12 @@
           "id": "sev-37",
           "orden": 7,
           "titulo": "Busto de toro",
-          "medidas_cm": null,
-          "serie": null,
+          "medidas_cm": "23 × 10 × 10",
+          "serie": 50,
           "material": "Bronce",
           "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
           "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
-          "estado": "pendiente",
-          "nota": "Faltan medidas y serie"
+          "estado": "confirmado"
         },
         {
           "id": "sev-1-2",
@@ -311,13 +307,13 @@
           "id": "sev-35",
           "orden": 15,
           "titulo": "Galgo",
-          "medidas_cm": null,
+          "medidas_cm": "22 × 12 × 15",
           "serie": null,
           "material": "Bronce",
           "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-35.jpg",
           "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-35.jpg",
-          "estado": "pendiente",
-          "nota": "Faltan medidas y serie"
+          "estado": "confirmado",
+          "nota": "Falta confirmar la serie"
         },
         {
           "id": "sev-6",
@@ -380,7 +376,7 @@
           "id": "sev-38",
           "orden": 4,
           "titulo": "Toro estilizado",
-          "medidas_cm": null,
+          "medidas_cm": "36 × 25 × 10",
           "serie": null,
           "material": "Bronce",
           "imagen": "img/trofeos/escultura_bronce_Sevilla-38.jpg",
@@ -392,7 +388,7 @@
           "id": "sev-39",
           "orden": 5,
           "titulo": "Caballo estilizado",
-          "medidas_cm": null,
+          "medidas_cm": "34 × 30 × 10",
           "serie": null,
           "material": "Bronce",
           "imagen": "img/trofeos/escultura_bronce_Sevilla-39.jpg",
@@ -416,7 +412,7 @@
           "id": "sev-41",
           "orden": 7,
           "titulo": "Premio Peña Flamenca La Solera",
-          "medidas_cm": null,
+          "medidas_cm": "25 × 12 × 10",
           "serie": null,
           "material": "Resina",
           "imagen": "img/trofeos/escultura_bronce_Sevilla-41.jpg",
