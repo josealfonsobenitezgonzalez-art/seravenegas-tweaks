@@ -1,7 +1,7 @@
 # Información legal — seravenegas.com
 
 > Borrador. Pendiente de revisión por un abogado y de completar los datos entre corchetes.
-> Última actualización: [fecha de publicación]
+> Última actualización: 13 de octubre de 2026
 
 ## Aviso legal
 
