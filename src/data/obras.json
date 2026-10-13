@@ -375,7 +375,7 @@
         {
           "id": "sev-38",
           "orden": 4,
-          "titulo": "Toro estilizado",
+          "titulo": "Toro «síntesis»",
           "medidas_cm": "36 × 25 × 10",
           "serie": null,
           "material": "Bronce",
@@ -387,7 +387,7 @@
         {
           "id": "sev-39",
           "orden": 5,
-          "titulo": "Caballo estilizado",
+          "titulo": "Caballo «síntesis»",
           "medidas_cm": "34 × 30 × 10",
           "serie": null,
           "material": "Bronce",
@@ -400,7 +400,7 @@
           "id": "sev-40",
           "orden": 6,
           "titulo": "Premio de la Federación Provincial de Sevilla de Entidades Flamencas",
-          "medidas_cm": null,
+          "medidas_cm": "30 × 10",
           "serie": null,
           "material": "Resina e hidroimpresión",
           "imagen": "img/trofeos/escultura_bronce_Sevilla-40.jpg",
