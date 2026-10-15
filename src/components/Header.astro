@@ -4,17 +4,18 @@ import logo from '../assets/img/general/logo-firma.jpg';
 import IconWa from './IconWa.astro';
 import { waNav } from '../lib/obras';
 
+// Enlaces absolutos a la home (/#...) para que funcionen también desde /legal.
 const enlaces = [
-  { href: '#coleccion-africa', texto: 'África' },
-  { href: '#coleccion-fauna-iberica', texto: 'Fauna Ibérica' },
-  { href: '#coleccion-trofeos', texto: 'Trofeos' },
-  { href: '#sobre', texto: 'El escultor' },
-  { href: '#contacto', texto: 'Contacto' },
+  { href: '/#coleccion-africa', texto: 'África' },
+  { href: '/#coleccion-fauna-iberica', texto: 'Fauna Ibérica' },
+  { href: '/#coleccion-trofeos', texto: 'Trofeos' },
+  { href: '/#sobre', texto: 'El escultor' },
+  { href: '/#contacto', texto: 'Contacto' },
 ];
 ---
 <header class="site-header">
   <div class="site-header__bar container">
-    <a href="#inicio" class="site-header__logo" aria-label="S. Venegas, escultor — inicio">
+    <a href="/#inicio" class="site-header__logo" aria-label="S. Venegas, escultor — inicio">
       <Image src={logo} alt="S. Venegas, escultor" widths={[160, 240]} sizes="120px" />
     </a>
 

@@ -192,16 +192,15 @@
           "nota": "Identificación hecha por la foto; confirmar"
         },
         {
-          "id": "sev-21",
+          "id": "sev-5",
           "orden": 5,
-          "titulo": "Busto de corzo",
-          "medidas_cm": "40 × 17 × 20",
+          "titulo": "Busto de muflón",
+          "medidas_cm": "20 × 10 × 9",
           "serie": 50,
           "material": "Bronce",
-          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-21.jpg",
-          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-21.jpg",
-          "estado": "confirmado",
-          "nota": "Identificación hecha por la foto; confirmar"
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-5.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-5.jpg",
+          "estado": "confirmado"
         },
         {
           "id": "sev-34",
@@ -215,41 +214,8 @@
           "estado": "confirmado"
         },
         {
-          "id": "sev-37",
-          "orden": 7,
-          "titulo": "Busto de toro",
-          "medidas_cm": "23 × 10 × 10",
-          "serie": 50,
-          "material": "Bronce",
-          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
-          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
-          "estado": "confirmado"
-        },
-        {
-          "id": "sev-1-2",
-          "orden": 8,
-          "titulo": "Lobo «Al acecho»",
-          "medidas_cm": "12 × 22 × 14",
-          "serie": 50,
-          "material": "Bronce",
-          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-1-2.jpg",
-          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-1-2.jpg",
-          "estado": "confirmado"
-        },
-        {
-          "id": "sev-5",
-          "orden": 9,
-          "titulo": "Busto de muflón",
-          "medidas_cm": "20 × 10 × 9",
-          "serie": 50,
-          "material": "Bronce",
-          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-5.jpg",
-          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-5.jpg",
-          "estado": "confirmado"
-        },
-        {
           "id": "sev-3",
-          "orden": 10,
+          "orden": 7,
           "titulo": "Busto de ciervo",
           "medidas_cm": "28 × 12 × 14",
           "serie": 50,
@@ -260,7 +226,7 @@
         },
         {
           "id": "sev-2",
-          "orden": 11,
+          "orden": 8,
           "titulo": "Busto de macho montés de Gredos",
           "medidas_cm": "27 × 14 × 12",
           "serie": 50,
@@ -272,7 +238,7 @@
         },
         {
           "id": "sev-4",
-          "orden": 12,
+          "orden": 9,
           "titulo": "Busto de jabalí",
           "medidas_cm": "18 × 10 × 14",
           "serie": 50,
@@ -282,8 +248,20 @@
           "estado": "confirmado"
         },
         {
+          "id": "sev-21",
+          "orden": 10,
+          "titulo": "Busto de corzo",
+          "medidas_cm": "40 × 17 × 20",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-21.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-21.jpg",
+          "estado": "confirmado",
+          "nota": "Identificación hecha por la foto; confirmar"
+        },
+        {
           "id": "sev-22",
-          "orden": 13,
+          "orden": 11,
           "titulo": "Podenco de rehala «Camborio»",
           "medidas_cm": "28 × 12 × 18",
           "serie": 50,
@@ -294,7 +272,7 @@
         },
         {
           "id": "sev-13",
-          "orden": 14,
+          "orden": 12,
           "titulo": "Mastín español",
           "medidas_cm": "12 × 18 × 10",
           "serie": 50,
@@ -304,8 +282,19 @@
           "estado": "confirmado"
         },
         {
+          "id": "sev-1-2",
+          "orden": 13,
+          "titulo": "Lobo «Al acecho»",
+          "medidas_cm": "12 × 22 × 14",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-1-2.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-1-2.jpg",
+          "estado": "confirmado"
+        },
+        {
           "id": "sev-35",
-          "orden": 15,
+          "orden": 14,
           "titulo": "Galgo",
           "medidas_cm": "22 × 12 × 15",
           "serie": null,
@@ -317,7 +306,7 @@
         },
         {
           "id": "sev-6",
-          "orden": 16,
+          "orden": 15,
           "titulo": "Ibex bezoar",
           "medidas_cm": "27 × 13 × 13",
           "serie": 50,
@@ -326,6 +315,17 @@
           "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-6.jpg",
           "estado": "confirmado",
           "nota": "Identificación hecha por la foto; confirmar"
+        },
+        {
+          "id": "sev-37",
+          "orden": 16,
+          "titulo": "Busto de toro",
+          "medidas_cm": "23 × 10 × 10",
+          "serie": 50,
+          "material": "Bronce",
+          "imagen": "img/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
+          "imagen_recorte": "img/recortes/fauna-iberica/escultura_bronce_Sevilla-37.jpg",
+          "estado": "confirmado"
         }
       ]
     },
