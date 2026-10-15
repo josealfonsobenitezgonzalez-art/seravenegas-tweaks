@@ -46,8 +46,6 @@ Los datos de contacto, el tiempo necesario para atender tu consulta. Si llega a 
 ### Proveedores
 La web está alojada en Vercel Inc. (Estados Unidos), que actúa como encargado del tratamiento. Las transferencias internacionales de datos se realizan con garantías adecuadas previstas en el RGPD. Si eliges contactar por WhatsApp, la conversación se rige además por las condiciones y la política de privacidad de WhatsApp.
 
-> Si finalmente se despliega en Netlify, cambiar "Vercel Inc." por "Netlify, Inc.".
-
 ### Tus derechos
 Puedes pedir el acceso, la rectificación o la supresión de tus datos, así como la limitación u oposición a su tratamiento y su portabilidad, escribiendo a info@seravenegas.com. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).
 
