@@ -1,8 +1,5 @@
 # Información legal — seravenegas.com
 
-> Borrador. Pendiente de revisión por un abogado y de completar los datos entre corchetes.
-> Última actualización: 13 de octubre de 2026
-
 ## Aviso legal
 
 En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI), se informa de los datos del titular de este sitio web:
@@ -10,7 +7,7 @@ En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad 
 - **Titular:** Venegas Taxidermia, S.L. (Serafín Venegas)
 - **NIF:** B-90374729
 - **Domicilio:** C/ Pintores, 2 · 41808 Villanueva del Ariscal (Sevilla)
-- **Correo electrónico:** info@seravenegas.com
+- **Correo electrónico:** seravenegas.escultura@outlook.com
 - **Sitio web:** seravenegas.com
 
 ### Objeto
@@ -28,7 +25,7 @@ Este aviso legal se rige por la legislación española.
 ## Política de privacidad
 
 ### Responsable del tratamiento
-Venegas Taxidermia, S.L. (Serafín Venegas), NIF B-90374729, con domicilio en C/ Pintores, 2, 41808 Villanueva del Ariscal (Sevilla), y correo info@seravenegas.com.
+Venegas Taxidermia, S.L. (Serafín Venegas), NIF B-90374729, con domicilio en C/ Pintores, 2, 41808 Villanueva del Ariscal (Sevilla), y correo seravenegas.escultura@outlook.com.
 
 ### Qué datos se tratan
 - **Datos de navegación:** dirección IP, navegador y fecha de acceso, que el proveedor de alojamiento registra de forma automática por motivos técnicos y de seguridad.
@@ -47,7 +44,7 @@ Los datos de contacto, el tiempo necesario para atender tu consulta. Si llega a 
 La web está alojada en Vercel Inc. (Estados Unidos), que actúa como encargado del tratamiento. Las transferencias internacionales de datos se realizan con garantías adecuadas previstas en el RGPD. Si eliges contactar por WhatsApp, la conversación se rige además por las condiciones y la política de privacidad de WhatsApp.
 
 ### Tus derechos
-Puedes pedir el acceso, la rectificación o la supresión de tus datos, así como la limitación u oposición a su tratamiento y su portabilidad, escribiendo a info@seravenegas.com. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).
+Puedes pedir el acceso, la rectificación o la supresión de tus datos, así como la limitación u oposición a su tratamiento y su portabilidad, escribiendo a seravenegas.escultura@outlook.com. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).
 
 ## Política de cookies
 
