@@ -4,7 +4,7 @@ export const SITE = {
   name: 'S. Venegas, escultor',
   autor: 'Serafín Venegas',
   url: 'https://seravenegas.com',
-  title: 'S. Venegas, escultor · Escultura en bronce de fauna africana e ibérica',
+  title: 'Serafín Venegas · Escultor · Escultura en bronce de fauna africana e ibérica',
   description:
     'Escultura cinegética en bronce de Serafín Venegas: fauna africana e ibérica y trofeos por encargo. Consulta disponibilidad y encargos por WhatsApp.',
   lang: 'es',
